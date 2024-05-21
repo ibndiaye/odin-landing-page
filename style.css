@@ -26,13 +26,13 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-} */
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .navbar{
     background-color: var(--dark-background);
@@ -100,7 +100,7 @@
 }
 
 .info img{
-    width: 150px;
+    width: 250px;
     border-radius: var(--rounded-corners);
     border: 5px solid greenyellow;
 }
@@ -116,12 +116,36 @@
 .info .info-box{
     display: flex;
     flex-direction: column;
-    max-width: 150px;
+    max-width: 250px;
     align-items: center;
     text-align: center;
 }
 
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--quote-background);
+}
+
+.quote .content{
+    width: 800px;
+    color: var(--quote-text-font-color);
+    font-size: var(--quote-text-font-size);
+    font-weight: var(--quote-text-font-weight);
+    font-style: var(--quote-text-font-style);
+    margin-bottom: 0px;
+}
+
+.quote .author{
+    font-size: 25px;
+    align-self: center;
+    width: max-content;
+}
 
 .footer{
     background-color: var(--dark-background);
+    color: var(--header-font-color);
 }
